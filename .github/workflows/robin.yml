@@ -1,0 +1,17 @@
+name: "Node"
+
+on:
+  push:
+    branches: 
+      -master
+      -prod
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "print name"
+        run: echo "hello robin"
+
+     
